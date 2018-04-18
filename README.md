@@ -1,4 +1,4 @@
-Jimmy is the Information Architecht
+Jimmy is the Information Architect
 
 Irfan is the Designer
 
