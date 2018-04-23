@@ -7,6 +7,10 @@
 		<link rel="stylesheet" href="inc/nav.css">
 		<!-- Insert Fonts Here -->
 	</head>
+	
+	<header>
+		<a href="login.php">Log In or Sign Up Here!</a>
+	</header>
 
 	<body>
 
