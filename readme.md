@@ -16,3 +16,4 @@ To Casey:
 
 Nothing too complex that you will have to do. The survey will only ask for Name, Email Address, and a Brief Description of their time in Stockholm. Log in shouldn't be too complex, though we should figure out a way to keep normal visitors out. Perhaps the logos can be clicked to go back home, and perhaps the images can be clicked to go to the websites of the organizations they represent (so for example, clicking on the link of a palace image will take you to the Wikipedia article or the palace's website).
 
+For the log in, we'll have a link on the top right corner of the website that will take the user to a special log in page (login.php). Then you'll have a log in box for already signed up users on the left, and a sign up box for users on the right. The nav bar should still be on the login page.
