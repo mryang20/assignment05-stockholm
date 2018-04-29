@@ -3,6 +3,8 @@
  		color: white;
 	}
 
+
+
 .button {
 	float: right;
   font: bold 11px Arial;
@@ -16,14 +18,31 @@
   border-left: 2px solid #CCCCCC;
 }
 
-article, aside , footer {
-	grid-column: 1 / 3;
-	
+.grid-container {
+  display: grid;
+  grid-template-columns: 550px 350px ;
+  grid-gap: 10px;
+  background-color: white;
+  padding-left: 30px;
 }
 
+article {
+	padding-right: 30px;
+	border-right: 1px solid
+}
+
+aside {
+	padding-left: 30px;
+}
 
 body {
 max-width: 1000px;
+padding-left: 170px;
 
+}
+
+
+footer {
+ padding-left: 30px;
 }
 

@@ -27,6 +27,8 @@
 	</header>
 
 <hr>
+
+<div class="grid-container">
 <article>
 		<p>Sweden's capital Stockholm is situated on the east coast of southern/central Sweden. Its coastal location is not easy to overlook when visiting the city situated on 14 islands. All the water in the city has earned it the nickname "Venice of the North", but unlike Venice the water is clean and clear as you would expect in Nordic countries. You can even see fishermen fishing right off the sidewalks and bridges, with salmon and sea trout being the main targets. At the right time of year you can even see salmon climbing the small waterfalls.</p>
 
@@ -53,6 +55,9 @@
   			</form>
 		</div>
 	</aside>
+	</div>
+
+	<hr>
 
 	<footer>
 		Team Stockholm
