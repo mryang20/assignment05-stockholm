@@ -2,3 +2,10 @@
  		background-color: black;
  		color: white;
 	}
+
+article {
+	padding-right: 30px;
+	border-right: 1px solid; }
+
+aside {
+	padding-left: 30px; }
