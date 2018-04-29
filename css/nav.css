@@ -6,7 +6,7 @@ nav UL {
 }
 
 nav li {
-        border: 1px solid black;
+        border: 2px solid black;
         display: table-cell;
 }
 
@@ -23,10 +23,10 @@ nav ul a {
 
 .menu a {
 	 display:block;
-         padding-top: 5px;
-         padding-right: 20px;
-         padding-bottom: 5px;
-         padding-left: 20px;
+         padding-top: 10px;
+         padding-right: 40px;
+         padding-bottom: 10px;
+         padding-left: 40px;
 }
 
 .menu a.active-page
