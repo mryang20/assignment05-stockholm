@@ -48,3 +48,17 @@ footer {
  padding-left: 30px;
 }
 
+
+.pic {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+height: 150px;
+    width: 25%;
+}
+
+.wrap {
+    margin-bottom: 80px;
+	margin-top: 40px;
+	
+}
