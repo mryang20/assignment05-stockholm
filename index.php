@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Home</title>
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+		
+	
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="inc/nav.css">
+		<link rel="stylesheet" href="css/nav.css">
 		<!-- Insert Fonts Here -->
 	</head>
 	
 	<header>
-		<a href="login.php">Log In or Sign Up Here!</a>
+		<?php include "includes/nav.inc" ?>
 	</header>
 
 	<body>
@@ -17,7 +22,7 @@
 
 		<p>At Stockholm’s heart lie the cobbled streets of Gamla Stan ("Old Town") where most buildings date from the 16th to 19th century and house numerous little shops, cafés, restaurants, museums and hotels, in addition to the 18th century Royal Palace. Although many of the stores lining the main narrow streets contain the usual tacky items associated with popular tourist attractions, the area is unique, cozy and beautiful. The moment you turn off the main streets you are greeted by a plethora of old buildings and tiny backstreet courtyards, adding to the charm that has made this area so popular. Originally founded in the 13th century, Stockholm's roots might go back even further than Gamla Stan lets on but the city itself is as modern as they come and it's considered one of the most trendy and fashionable cities of Scandinavia. Stockholm also houses over 100 art galleries and 70 museums, no small feat for a city with a population of just 1.6 million, including the metropolitan area.</p>
 
-	</body>
+	
 
 	<aside>
 		<div class="Form">  
@@ -45,4 +50,8 @@
 		Assignment 5
 	</footer>
 
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/menu-highlighter.js"></script>
+
+</body>
 </html>
