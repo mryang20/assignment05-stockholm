@@ -22,7 +22,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic4.jpg" >
 
 		<h1>Fattoush / Roppongi / Panini</h1>
 
@@ -33,7 +33,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic5.jpg" >
 
 		<h1>Örtagården</h1>
 			<p>Located on the top floor of the Östermalmshallen food market, Örtagården serves a sumptuous vegetarian buffet with hot and cold vegetarian dishes at a decent price. There is also a "back pocket" serving meat dishes.</p>
@@ -42,7 +42,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic6.jpg" >
 
 		<h1>Simons Skafferi No12</h1>
 			<p>Swedish dishes with focus on local and organic ingredients in season, so the menu changes quite often. The employees are very professional and the wine to food pairings are excellent. Open both for lunch and dinner.</p>
@@ -51,7 +51,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic1.jpg" >
 
 
 		<h1>Operabaren and Bakfickan</h1>
@@ -61,7 +61,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic8.jpg" >
 
 
 		<h1>Café Opera and Operakällaren</h1>

@@ -32,7 +32,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic2.jpg" >
 
 		<h1>Museum of Modern Art (Moderna Museet)</h1>
 
@@ -41,7 +41,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic3.jpg" >
 
 
 		<h1>National Museum (Nationalmuseum)</h1>
@@ -51,7 +51,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic1.jpg" >
 
 		<h1>Stockholm Public Library </h1>
 

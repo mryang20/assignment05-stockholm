@@ -20,7 +20,7 @@
 
 
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic9.jpg" >
 		<h1>Drottninggatan</h1>
 
 			<p>A pedestrianised street that starts at the Riksbron bridge to Gamla Stan and continues north up to the Observatorielunden park. The section south of the Sergels torg square is a typical tourist trap, dominated by stores selling tourist souvenirs and cheap clothes, and bland and bleak restaurants. Between Sergels Torg and Kungsgatan you will find the Åhléns and PUB department stores, as well as flagship stores for some national and international clothing chains. North of Kungsgatan, there are more cafés, restaurants and smaller stores.</p>
@@ -29,7 +29,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic10.jpg" >
 
 		<h1>Åhléns City</h1>
 
@@ -39,7 +39,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic11.jpg" >
 
 		<h1>PUB</h1>
 
@@ -49,7 +49,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic12.jpg" >
 
 		<h1>Gallerian</h1>
 			<p>Stockholm's oldest shopping mall, where you can find many of Sweden’s major mainstream fashion chains as well as some foreign brands such as Topshop/Topman, French Connection, Esprit and United Colors of Benetton.</p>
@@ -57,7 +57,7 @@
 
 <hr>
 <div class = "wrap">
-<img class="pic" src="images/pic.jpg" >
+<img class="pic" src="images/pic13.jpg" >
 
 
 		<h1>Sturegallerian</h1>
