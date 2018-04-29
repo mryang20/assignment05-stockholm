@@ -1,3 +1,8 @@
+  
+<div class="snlnk">
+    <a class="apple" href="login.php">Log In or Sign Up Here!</a> 
+</div>
+
 <div class = "logo"><a href="index.php"><img src="images/logo.png" alt ="Logo"> </a> 
 	</div>
 
