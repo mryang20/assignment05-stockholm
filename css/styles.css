@@ -3,6 +3,14 @@
  		color: white;
 	}
 
+@font-face {
+  font-family: 'Copse-Regular';
+  src: url('Copse-Regular.eot');
+  src: url('Copse-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Copse-Regular.woff') format('woff'),
+       url('Copse-Regular.ttf') format('truetype'),
+       url('Copse-Regular.svg#Copse-Regular') format('svg');
+}
 
 
 .button {
@@ -37,10 +45,12 @@ aside {
 }
 
 body {
-max-width: 1000px;
+max-width: 900px;
 padding-left: 170px;
 background: -webkit-linear-gradient(left, rgba(212,212,212,1) 0%, rgba(204,204,204,1) 27%, rgba(194,194,194,1) 51%, rgba(237,237,237,1) 100%);
 font-family: 'Lato', sans-serif;
+letter-spacing: 0.3mm;
+line-height: 30px;
 
 }
 
@@ -63,4 +73,13 @@ height: 150px;
     margin-bottom: 80px;
 	margin-top: 40px;
 	
+}
+h1 {
+	font-family: 'Copse-Regular', serif;
+	
+}
+
+h2, h3 {
+	border-bottom: 1px outset; 
+	font-family: 'Copse-Regular', serif;
 }

@@ -5,6 +5,7 @@
 		<title>Places to Eat</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/nav.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<!-- Insert Fonts Here -->
 	</head>
 	
