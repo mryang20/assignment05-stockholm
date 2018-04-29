@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Places to Shop</title>
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="inc/nav.css">
+		<link rel="stylesheet" href="css/nav.css">
 		<!-- Insert Fonts Here -->
 	</head>
 	

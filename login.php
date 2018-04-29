@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Home</title>
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="inc/nav.css">
+		<link rel="stylesheet" href="css/nav.css">
 		<!-- Insert Fonts Here -->
 	</head>
 

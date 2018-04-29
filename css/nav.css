@@ -1,1 +1,53 @@
-filler
+nav UL {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+
+nav li {
+        border: 1px solid black;
+        display: table-cell;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover { 
+               color: white; 
+               background-color: #333333;
+		
+}
+
+.menu a {
+	 display:block;
+         padding-top: 5px;
+         padding-right: 20px;
+         padding-bottom: 5px;
+         padding-left: 20px;
+}
+
+.menu a.active-page
+{
+  background-color:blue;
+}
+
+.menu li { display: table-cell; }
+.menu ul { border-collapse: collapse; }
+
+.currentLink {
+   color: #640200;
+   background-color: #000000;
+
+.logo {
+    position:relative;
+    width: 50%;
+    float: left;
+    display: block;
+    padding: 10px;
+	margin-top: 0px;
+    margin-bottom: 0px;
+	
+}

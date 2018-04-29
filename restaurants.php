@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Places to Eat</title>
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="inc/nav.css">
+		<link rel="stylesheet" href="css/nav.css">
 		<!-- Insert Fonts Here -->
 	</head>
 	
 	<header>
 		<a href="login.php">Log In or Sign Up Here!</a>
+		<?php include "includes/nav.php" ?>
 	</header>
 
 	<body>
