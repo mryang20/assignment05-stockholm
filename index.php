@@ -16,6 +16,7 @@
 	</head>
 	
 	<header>
+		 <a href="login.php">Log In or Sign Up Here!</a> 
 		<?php include "includes/nav.inc" ?>
 	</header>
 

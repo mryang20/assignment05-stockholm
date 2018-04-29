@@ -52,10 +52,3 @@ nav ul a {
 	
 }
 
-div.log {
-	top: 0;
-    position: fixed;
-    right: 0;
-    width: 300px;
-    border: 3px solid #73AD21;
-}
