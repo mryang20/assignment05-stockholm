@@ -10,6 +10,7 @@
 	
 	<header>
 		<a href="login.php">Log In or Sign Up Here!</a>
+	<?php include "includes/nav.inc" ?>
 	</header>
 
 	<body>
@@ -32,6 +33,8 @@
 		<h1>Sturegallerian</h1>
 			<p>Opened in 1989, Sturegallerian is an upmarket shopping center in central Stockholm, with stores carrying a good selection of exclusive brands. Also the home of the upmarket restaurants Sturehof and Tures and the nightclub Sturecompagniet.</p>
 
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/menu-highlighter.js"></script>
 	</body>
 
 </html>

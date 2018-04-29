@@ -10,7 +10,7 @@
 	
 	<header>
 		<a href="login.php">Log In or Sign Up Here!</a>
-		<?php include "includes/nav.php" ?>
+		<?php include "includes/nav.inc" ?>
 	</header>
 
 	<body>
@@ -33,6 +33,8 @@
 
 			<p>Situated in the building of the Royal Opera, Café Opera has for long been the place if you want to be seen with celebrities. Offers good food and drinks. Dress code applies. In the same building you'll find a beautiful dining room of the formal and extremely expensive Operakällaren.</p>
 
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/menu-highlighter.js"></script>
 	</body>
 
 </html>
