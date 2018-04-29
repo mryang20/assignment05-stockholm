@@ -11,10 +11,14 @@
 	<header>
 		 
 
+	
+
+<header>
+		 
+
 		<?php include "includes/nav.inc" ?>
 	</header>
-
-	<body>
+<hr>
 
 		<h1>Klara kyrka</h1>
 
@@ -30,6 +34,14 @@
 		<h1>Stockholm Public Library (Stadsbiblioteket)</h1>
 
 			<p>Built in 1928 and designed by the famous Swedish architect Erik Gunnar Asplund, the interior of the cylinder-shaped main hall is spectacular, with three floors of bookshelves covering 360 degrees of circular wall. Books (both fiction and non-fiction) are available in many different languages, including English and German. On the cliff overlooking it is the old Observatory, which has a fine view of the city to the east. There is also a small café, and an Observatory Museum.</p>
+<hr>
+
+	<footer>
+		Team Stockholm
+		<br>
+		Assignment 5
+	</footer>
+
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/menu-highlighter.js"></script>

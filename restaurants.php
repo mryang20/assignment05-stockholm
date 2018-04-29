@@ -8,14 +8,16 @@
 		<!-- Insert Fonts Here -->
 	</head>
 	
-	<header>
+	
+
+	<body>
+
+<header>
 	 
 		
 		<?php include "includes/nav.inc" ?>
 	</header>
-
-	<body>
-
+<hr>
 		<h1>Fattoush / Roppongi / Panini</h1>
 
 			<p>A small three-restaurant food court in a central location between the Gallerian shopping center and the NK department store. Fattoush has tasty Lebanese fast food, Roppongi has decent sushi, and Panini offers a selection of sandwiches and salads.</p>
@@ -33,6 +35,14 @@
 		<h1>Café Opera and Operakällaren</h1>
 
 			<p>Situated in the building of the Royal Opera, Café Opera has for long been the place if you want to be seen with celebrities. Offers good food and drinks. Dress code applies. In the same building you'll find a beautiful dining room of the formal and extremely expensive Operakällaren.</p>
+
+<hr>
+
+	<footer>
+		Team Stockholm
+		<br>
+		Assignment 5
+	</footer>
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/menu-highlighter.js"></script>

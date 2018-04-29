@@ -8,13 +8,15 @@
 		<!-- Insert Fonts Here -->
 	</head>
 	
-	<header>
-		 
-	<?php include "includes/nav.inc" ?>
-	</header>
+	
 
 	<body>
 
+<header>
+		 
+	<?php include "includes/nav.inc" ?>
+	</header>
+<hr>
 		<h1>Drottninggatan</h1>
 
 			<p>A pedestrianised street that starts at the Riksbron bridge to Gamla Stan and continues north up to the Observatorielunden park. The section south of the Sergels torg square is a typical tourist trap, dominated by stores selling tourist souvenirs and cheap clothes, and bland and bleak restaurants. Between Sergels Torg and Kungsgatan you will find the Åhléns and PUB department stores, as well as flagship stores for some national and international clothing chains. North of Kungsgatan, there are more cafés, restaurants and smaller stores.</p>
@@ -32,6 +34,14 @@
 
 		<h1>Sturegallerian</h1>
 			<p>Opened in 1989, Sturegallerian is an upmarket shopping center in central Stockholm, with stores carrying a good selection of exclusive brands. Also the home of the upmarket restaurants Sturehof and Tures and the nightclub Sturecompagniet.</p>
+
+<hr>
+
+	<footer>
+		Team Stockholm
+		<br>
+		Assignment 5
+	</footer>
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/menu-highlighter.js"></script>

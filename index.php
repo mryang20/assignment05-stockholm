@@ -15,9 +15,6 @@
 		<!-- Insert Fonts Here -->
 	</head>
 	
-	
-
-
 		
 	<body>
 
