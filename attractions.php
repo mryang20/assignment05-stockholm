@@ -5,6 +5,7 @@
 		<title>Sights to See</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/nav.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<!-- Insert Fonts Here -->
 	</head>
 	
@@ -26,7 +27,7 @@
 		<h1>Klara kyrka</h1>
 
 
-			<p>Close to the Sergels Torg square, and one of the few buildings in the district to survive the 1960s redevelopment, this large redbrick church was built in the 16th century, following the demolition of a 13th-century nunnery. The 116-metre steeple is the second tallest in Scandinavia and one of the ten tallest building in Sweden, making it a significant landmark. The artwork inside includes an 18th-century altarpiece. In the cemetery, a stone commemorates the 18th-century songwriter Carl Michael Bellman.</p>
+			<p>Close to the Sergels Torg square, and one of the few buildings in the district to survive the 1960s redevelopment, this large redbrick church was built in the 16th century, following the demolition of a 13th-century nunnery. The 116-metre steeple is the second tallest in Scandinavia and one of the ten tallest building in Sweden, making it a significant landmark. The artwork inside includes an 18th-century altarpiece. .</p>
 
 </div>
 

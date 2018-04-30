@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/nav.css">
 		<!-- Insert Fonts Here -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	</head>
 	
 	
@@ -23,7 +24,7 @@
 <img class="pic" src="images/pic9.jpg" >
 		<h1>Drottninggatan</h1>
 
-			<p>A pedestrianised street that starts at the Riksbron bridge to Gamla Stan and continues north up to the Observatorielunden park. The section south of the Sergels torg square is a typical tourist trap, dominated by stores selling tourist souvenirs and cheap clothes, and bland and bleak restaurants. Between Sergels Torg and Kungsgatan you will find the Åhléns and PUB department stores, as well as flagship stores for some national and international clothing chains. North of Kungsgatan, there are more cafés, restaurants and smaller stores.</p>
+			<p>A pedestrianised street that starts at the Riksbron bridge to Gamla Stan and continues north up to the Observatorielunden park. The section south of the Sergels torg square is a typical tourist trap, dominated by stores selling tourist souvenirs and cheap clothes, and bland and bleak restaurants. Between Sergels Torg and Kungsgatan you will find the Åhléns and PUB department stores, as well as flagship stores for some national and international clothing chains. </p>
 
 </div>
 
