@@ -1,56 +1,81 @@
 <?php
-	require_once 'config.php';
+
+$server = '66.147.242.186';
+$user = 'urcscon3_cbrent1';
+$pass = 'coffee1N';
+$db = 'urcscon3_cbrentna5';
+
+
+$connection = mysqli_connect($server,$user,$pass,$db);
+if (!$connection) {
+    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
 
 	$username = $password = "";
 	$username_err = $password_err = "";
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-	if(empty(trim($_POST["username"]))){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (empty(trim($_POST["username"]))) {
         $username_err = 'Please enter username.';
-    } else{
+    } else {
         $username = trim($_POST["username"]);
     }
-    if(empty(trim($_POST['password']))){
+
+
+    if (empty(trim($_POST['password']))) {
         $password_err = 'Please enter your password.';
-    } else{
+    } else {
         $password = trim($_POST['password']);
     }
 
-    if(empty($username_err) && empty($password_err)){
-    	$sql = "SELECT username, password FROM users WHERE username = ?";
 
-    	if($stmt = mysqli_prepare($link, $sql)){
-    		mysqli_stmt_bind_param($stmt, "s", $param_username);
+    if (empty($username_err) && empty($password_err)) {
 
-    		$param_username = $username;
+        $sql = "SELECT username, password FROM users WHERE username = ?";
+        if ($stmt = $connection->prepare($sql)) {
 
-    		if(mysqli_stmt_execute($stmt)){
-    			mysqli_stmt_store_result($stmt);
 
-    			if(mysqli_stmt_num_rows($stmt) == 1){     
-    				mysqli_stmt_bind_result($stmt, $username, $hashed_password);
+            $param_username = $username;
+
+            if(mysqli_stmt_execute($stmt)){
+                // Store result
+                mysqli_stmt_store_result($stmt);
+                
+                // Check if username exists, if yes then verify password
+                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                    // Bind result variables
+                    mysqli_stmt_bind_result($stmt, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
-                        	session_start();
-                            $_SESSION['username'] = $username;      
-                            header("location: admin.php"); 
-                         } else{
-                         	 $password_err = 'The password you entered was not valid.';
-                         }
+
+                            session_start();
+                            $_SESSION['username'] = $username;
+                            header("location: admin.php");
+                        } else {
+
+                            $password_err = 'The password you entered was not valid.';
+                        }
                     }
                 } else {
-                	$username_err = 'No account found with that username.';
+
+                    $username_err = 'No account found with that username.';
                 }
             } else {
-            	echo "Oops! Something went wrong. Please try again later.";
+                echo "Oops! Something went wrong. Please try again later.";
             }
         }
 
-    	mysqli_stmt_close($stmt);
+      // Close statement
+        mysqli_stmt_close($stmt);
     }
-
-    mysqli_close($link);
+    
+    // Close connection
+    mysqli_close($connection);
 }
 ?>
 
@@ -60,7 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
    <meta charset="utf-8">
 
-	<title>Home</title>
+	<title>Login</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -81,7 +106,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <hr>
 		<!-- Login Stuff -->
-		<p>New User? Sign Up Here</p>
 
 		<h2>Login</h2>
 		<p>Please fill in your credentials to login.</p>
@@ -99,15 +123,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p> <!--get rid of this if i make them both on the same page-->
+            <p>Don't have an account? <a href="register.php">Sign up here</a>.</p>
         </form>
-
-
-        	<footer>
-		Team Stockholm
-		<br>
-		Assignment 5
-	</footer>
 
 
 <script src="http://code.jquery.com/jquery.js"></script>

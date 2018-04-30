@@ -1,23 +1,78 @@
-﻿<?php
-	$dbhost = "localhost";
-	$dbuser = "root";
-	$dbpass = "MyNewPass";
-	$dbname = "assignment5";
-	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+<?php
 
-	$mysqli = new mysqli('localhost', 'root', 'MyNewPass', 'assignment5');
+session_start();
 
-$userName = Trim(stripslashes($_POST['Name']));
-$userEmail = Trim(stripslashes($_POST['EmailAddress']));
-$userDescription = Trim(stripslashes($_POST['ProjectDescription']));
 
-echo '<p>Name '. $userName.'</p>'; //why the fuck isnt this writing to the database im so angry//
-echo '<p>Email '. $userEmail.'</p>';
-echo '<p>Description '. $userDescription.'</p>';
+$server = '66.147.242.186';
+$user = 'urcscon3_cbrent1';
+$pass = 'coffee1N';
+$db = 'urcscon3_cbrentna5';
 
-$query = "INSERT INTO surveydata ('name', 'email', 'description') VALUES ('$userName', '$userEmail', '$userDescription')"; 
-$result = mysqli_query($connection, $query); ?>
 
+$connection = mysqli_connect($server,$user,$pass,$db);
+if (!$connection) {
+    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
+
+$name = $email = $description = "";
+$name_err = $email_err = $description_err = "";
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
+    if (empty(trim($_POST["name"]))) {
+        $name_err = "Please enter your name.";
+    }
+
+    if (empty(trim($_POST["email"]))) {
+        $email_err = "Please enter your email.";
+    }
+
+    if (empty(trim($_POST["description"]))) {
+        $email_err = "Please enter your desription.";
+    }
+
+
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $description = trim($_POST['description']);
+
+
+    $param_name = $name;
+    $param_email = $email;
+    $param_description = $description;
+
+
+    if (empty($name_err) && empty($email_err) && empty($desription_err)) {
+
+
+        $sql = "INSERT INTO surveydata (name, email, description) VALUES (?, ?, ?)";
+        if ($stmt = $connection->prepare($sql)) {
+
+            $stmt->bind_param("sss", $param_name, $param_email, $param_description);
+
+            $param_name = $name;
+            $param_email = $email;
+            $param_desription = $desription;
+
+            if($stmt->execute()) {
+                header("location: index.php");
+            } else {
+                echo "Something went wrong. Please try again later.";
+            }
+        }
+
+        $stmt->close();
+    }
+    $connection->close();
+}
+?>
+
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -52,18 +107,19 @@ $result = mysqli_query($connection, $query); ?>
 
 	</article>
 
+
 	<aside>
 		<div class="Form">  
-  			<form id="contact" action="index.php" method="post">
+  			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
    				<h2>Contact Us! We'd love to know more about your time in Stockholm!</h2>
     				<fieldset>
-      					<input name = "Name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+      					<input name = "name" placeholder="Your name" type="text" tabindex="1" required autofocus>
     				</fieldset>
     				<fieldset>
-      					<input name = "EmailAddress" placeholder="Your Email Address" type="email" tabindex="2" required>
+      					<input name = "email" placeholder="Your Email Address" type="email" tabindex="2" required>
     				</fieldset>
     				<fieldset>
-     					<textarea name = "ProjectDescription" placeholder="Describe Your Time in Stockholm" tabindex="3" required></textarea>
+     					<textarea name = "description" placeholder="Describe Your Time in Stockholm" tabindex="3" required></textarea>
     				</fieldset>
     				<fieldset>
       					<button name="submit" type="submit" id="contact-submit" data-submit="...Sending" value="Submit">Submit</button>

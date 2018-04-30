@@ -34,9 +34,19 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
 <hr>
 		<?php
-// connect to the database
-include('config.php');
+$server = '66.147.242.186';
+$user = 'urcscon3_cbrent1';
+$pass = 'coffee1N';
+$db = 'urcscon3_cbrentna5';
 
+
+$connection = mysqli_connect($server,$user,$pass,$db);
+if (!$connection) {
+    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
 // get results from database
 $result = mysqli_query($connection, "SELECT * FROM surveydata");
 ?>
@@ -74,11 +84,6 @@ while($row = mysqli_fetch_array( $result )) {
 
 		<p><a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a></p>
 
-	<footer>
-		Team Stockholm
-		<br>
-		Assignment 5
-	</footer>
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/menu-highlighter.js"></script>
