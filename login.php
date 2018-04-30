@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         if(password_verify($password, $hashed_password)){
                         	session_start();
                             $_SESSION['username'] = $username;      
-                            header("location: welcome.php"); //CHANGE THIS TO THE ADMIN PAGE FOR VIEWING THE TABLE
+                            header("location: admin.php"); 
                          } else{
                          	 $password_err = 'The password you entered was not valid.';
                          }
@@ -99,8 +99,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p> <!--get rid of this if i make them both on the same page-->
         </form>
-	</body>
 
+
+        	<footer>
+		Team Stockholm
+		<br>
+		Assignment 5
+	</footer>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/menu-highlighter.js"></script>
+
+</body>
 </html>

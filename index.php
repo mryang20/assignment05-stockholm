@@ -1,4 +1,23 @@
-﻿<!DOCTYPE html>
+﻿<?php
+	$dbhost = "localhost";
+	$dbuser = "root";
+	$dbpass = "MyNewPass";
+	$dbname = "assignment5";
+	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+	$mysqli = new mysqli('localhost', 'root', 'MyNewPass', 'assignment5');
+
+$userName = Trim(stripslashes($_POST['Name']));
+$userEmail = Trim(stripslashes($_POST['EmailAddress']));
+$userDescription = Trim(stripslashes($_POST['ProjectDescription']));
+
+echo '<p>Name '. $userName.'</p>'; //why the fuck isnt this writing to the database im so angry//
+echo '<p>Email '. $userEmail.'</p>';
+echo '<p>Description '. $userDescription.'</p>';
+
+$query = "INSERT INTO surveydata ('name', 'email', 'description') VALUES ('$userName', '$userEmail', '$userDescription')"; 
+$result = mysqli_query($connection, $query); ?>
+
 <html lang="en">
 
 <head>
@@ -47,7 +66,7 @@
      					<textarea name = "ProjectDescription" placeholder="Describe Your Time in Stockholm" tabindex="3" required></textarea>
     				</fieldset>
     				<fieldset>
-      					<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      					<button name="submit" type="submit" id="contact-submit" data-submit="...Sending" value="Submit">Submit</button>
     				</fieldset>
   			</form>
 		</div>
